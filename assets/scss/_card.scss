@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100%;
+
+  .content {
+    background: $alt-bg-color-dark;
+    padding: 1rem 1.4rem;
+    height: 38.2%;
+    border-radius: 0 0 1rem 1rem;
+    .title {
+      font-size: 3rem;
+    }
+    .description {
+      // font-size: 1.2rem;
+      color: $fg-color-dark;
+      line-height: normal;
+      margin-top: 0.7rem;
+    }
+  }
+  img {
+    border-radius: 1rem 1rem 0 0;
+    height: 61.8%;
+    object-fit: cover;
+  }
+}

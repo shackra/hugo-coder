@@ -1,0 +1,33 @@
+.portfolio {
+  display: grid;
+  gap: 2rem;
+  grid-template-rows: 1fr 1fr 1fr;
+  
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  a:hover {
+    text-decoration-line: none;
+    .title {
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.lang, .tech {
+  padding: 0.5rem 0.8rem;
+  border-radius: 1rem;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  font-weight: bolder;
+}
+
+.lang {
+  background: $fg-color-notice-warning-icon;
+  color: $bg-color-dark;
+}
+
+.tech {
+  background: $link-color;
+}
